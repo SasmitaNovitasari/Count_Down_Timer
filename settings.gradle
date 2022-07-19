@@ -15,3 +15,4 @@ dependencyResolutionManagement {
 rootProject.name = "Count Down Timer"
 include ':app'
 include ':count down timer'
+include ':Library'
