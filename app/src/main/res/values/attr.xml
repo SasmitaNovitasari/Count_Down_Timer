@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CountDownTimer">
+        <attr name="start_date" format="string"/>
+        <attr name="end_date" format="string"/>
+        <attr name="start_date_format" format="string"/>
+        <attr name="end_date_format" format="string"/>
+        <attr name="finish_text" format="string"/>
+        <attr name="label_day" format="string"/>
+        <attr name="label_hour" format="string"/>
+        <attr name="label_minute" format="string"/>
+        <attr name="label_second" format="string"/>
+        <attr name="zero_number" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="HorizontalBar">
+        <attr name="start_date"/>
+        <attr name="end_date"/>
+        <attr name="start_date_format"/>
+        <attr name="end_date_format"/>
+    </declare-styleable>
+</resources>
