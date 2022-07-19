@@ -13,7 +13,6 @@ project.afterEvaluate {
         publications {
             release(MavenPublication) {
                 groupId 'com.github.SasmitaNovitasari'
-                from components.release
                 artifact androidSourcesJar // optional sources
             }
         }
@@ -41,13 +40,13 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-//    publishing {
-//        multipleVariants {
-//            withSourcesJar()
-//            withJavadocJar()
-//            allVariants()
-//        }
-//    }
+    publishing {
+        multipleVariants {
+            withSourcesJar()
+            withJavadocJar()
+            allVariants()
+        }
+    }
 }
 
 dependencies {
