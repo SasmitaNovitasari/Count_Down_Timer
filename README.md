@@ -32,3 +32,25 @@ Timer count down extends from TextView, this library also have timer with Progre
 | label_hour        | Default value : Hours [optional]                                                                                                                                                                                                  | String        |
 | label_minute      | Default_value : Minutes [optional]                                                                                                                                                                                                | String        |
 | label_second      | Default value : Seconds [optional]                                                                                                                                                                                                | String        |
+
+
+## Example XML
+```xml
+    <com.sasmitanovitasari.countdowntimer.Tick
+        android:id="@+id/countdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:end_date="19 07 2022 9:00:00"
+        app:start_date="18 07 2022 8:00:00"
+        app:zero_number="true" />
+```
+
+```xml
+    <com.sasmitanovitasari.countdowntimer.HorizontalBar
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="200dp"
+        android:layout_height="10dp"
+        android:id="@+id/progress"
+        app:end_date="19 07 2022 9:00:00"
+        app:start_date="19 07 2022 8:59:30"/>
+```
