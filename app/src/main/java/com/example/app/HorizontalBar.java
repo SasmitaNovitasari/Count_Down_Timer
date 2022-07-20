@@ -1,4 +1,4 @@
-package com.sasmitanovitasari.countdowntimer;
+package com.example.app;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -82,7 +82,7 @@ public class HorizontalBar extends ProgressBar {
         long start = convertDateToMillis(dateStart, startDateFormat);
         long end = convertDateToMillis(dateEnd, endDateFormat);
         long result = end - start;
-        countDownTimerProgress = new CountDownTimer(result, 1000) {
+        countDownTimerProgress = new android.os.CountDownTimer(result, 1000) {
             @Override
             public void onTick(long l) {
                 progress += 1000;

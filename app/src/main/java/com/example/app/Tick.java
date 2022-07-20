@@ -1,4 +1,4 @@
-package com.sasmitanovitasari.countdowntimer;
+package com.example.app;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
