@@ -16,18 +16,18 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-//        binding.start.setOnClickListener((view -> {
-//            binding.countdown.start();
-//        }));
-//        binding.stop.setOnClickListener((view -> {
-//            binding.countdown.stop();
-//        }));
-//        binding.resume.setOnClickListener((view -> {
-//            binding.countdown.resume();
-//        }));
-//        binding.reset.setOnClickListener((view -> {
-//            binding.countdown.reset();
-//        }));
+        binding.start.setOnClickListener((view -> {
+            binding.countdown.start();
+        }));
+        binding.stop.setOnClickListener((view -> {
+            binding.countdown.stop();
+        }));
+        binding.resume.setOnClickListener((view -> {
+            binding.countdown.resume();
+        }));
+        binding.reset.setOnClickListener((view -> {
+            binding.countdown.reset();
+        }));
 
     }
 }

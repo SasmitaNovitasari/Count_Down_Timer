@@ -130,12 +130,13 @@ public class Tick extends TextView {
         int second = Math.toIntExact(sisa2 / 1000);
 
         String output = "";
-        if (zeroNumber) {
-            output = String.valueOf(day) + labelDay +
-                    String.valueOf(hour) + labelHour +
-                    String.valueOf(minute) + labelMinute +
-                    String.valueOf(second) + labelSecond;
-        } else {
+
+        output = String.valueOf(day) + labelDay +
+                String.valueOf(hour) + labelHour +
+                String.valueOf(minute) + labelMinute +
+                String.valueOf(second) + labelSecond;
+
+        if (!zeroNumber) {
             if (day == 0) {
                 output = String.valueOf(hour) + labelHour +
                         String.valueOf(minute) + labelMinute +
