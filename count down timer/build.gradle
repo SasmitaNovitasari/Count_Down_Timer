@@ -13,9 +13,11 @@ afterEvaluate {
         publications {
             release(MavenPublication) {
                 from components.release
-                groupId = 'com.github.SasmitaNovitasari' //your git id
-                artifactId = 'Count_Down_Timer' //your-repository
-                version = '1.0.1' // As same as the Tag
+                artifact androidSourcesJar
+//                from components.release
+//                groupId = 'com.github.SasmitaNovitasari' //your git id
+//                artifactId = 'Count_Down_Timer' //your-repository
+//                version = '1.0.1' // As same as the Tag
             }
         }
     }
