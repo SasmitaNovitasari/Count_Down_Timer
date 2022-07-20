@@ -8,12 +8,14 @@ task androidSourcesJar(type: Jar) {
     from android.sourceSets.main.java.srcDirs
 }
 
-project.afterEvaluate {
+afterEvaluate {
     publishing {
         publications {
             release(MavenPublication) {
-                groupId 'com.github.SasmitaNovitasari'
-                artifact androidSourcesJar // optional sources
+                from components.release
+                groupId = 'com.github.SasmitaNovitasari' //your git id
+                artifactId = 'Count_Down_Timer' //your-repository
+                version = '1.0.1' // As same as the Tag
             }
         }
     }
@@ -40,13 +42,13 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-    publishing {
-        multipleVariants {
-            withSourcesJar()
-            withJavadocJar()
-            allVariants()
-        }
-    }
+//    publishing {
+//        multipleVariants {
+//            withSourcesJar()
+//            withJavadocJar()
+//            allVariants()
+//        }
+//    }
 }
 
 dependencies {
