@@ -15,10 +15,6 @@ afterEvaluate {
                 groupId 'com.github.SasmitaNovitasari'
                 from components.release
                 artifact androidSourcesJar
-//                from components.release
-//                groupId = 'com.github.SasmitaNovitasari' //your git id
-//                artifactId = 'Count_Down_Timer' //your-repository
-//                version = '1.0.1' // As same as the Tag
             }
         }
     }
@@ -53,9 +49,9 @@ android {
 //        }
 //    }
 
-    lintOptions {
-        abortOnError false
-    }
+//    lintOptions {
+//        abortOnError false
+//    }
 }
 
 dependencies {
