@@ -12,6 +12,7 @@ afterEvaluate {
     publishing {
         publications {
             release(MavenPublication) {
+                groupId 'com.github.SasmitaNovitasari'
                 from components.release
                 artifact androidSourcesJar
 //                from components.release

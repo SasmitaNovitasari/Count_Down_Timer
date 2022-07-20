@@ -4,7 +4,7 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.countdowntimer.databinding.ActivityMainBinding;
+import com.example.app.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
 
