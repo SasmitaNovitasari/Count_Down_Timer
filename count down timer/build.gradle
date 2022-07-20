@@ -25,8 +25,8 @@ afterEvaluate {
 }
 
 android {
-    lint {
-        baseline = file("lint-baseline.xml")
+    lintOptions {
+        abortOnError false
     }
 }
 
